@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Cau 2 buoi 3</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Đăng ký du lịch</h1>
+        <table>
+            <tr>
+                <td>Ho va ten</td>
+                <td>
+                    <input type="text" name="" id="">
+                </td>
+            </tr>
+            <tr>
+                    <td>Dia chi</td>
+                    <td>
+                        <input type="text" name="" id="">
+                    </td>
+            </tr>
+            <tr>
+                    <td>Dien thoai</td>
+                    <td>
+                        <input type="text" name="" id="">
+                    </td>
+            </tr>
+            <tr>
+                    <td>Khách viet nam</td>
+                    <td>
+                        <input type="checkbox" name="" id="">
+                    </td>
+            </tr>
+            <tr>
+                    <td>Chọn tour</td>
+                    <td>
+                        <select name="" id="">
+                            <optgroup label="Miền bắc">
+                                <option value="">Hà Nội - Hạ Long - Sapa</option>
+                                <option value="">Hà Nội - Chùa Hương - Ninh Bình</option>
+                                <option value="">Hà Nội - Cát Bà - Tuấn Châu</option>
+                            </optgroup>
+                            <optgroup label="Miền trung">
+                                    <option value="">Huế - Bạch Mã - Đà Nẵng</option>
+                                    <option value="">Nha Trang - Đà Lạt</option>
+                                    <option value="">Buôn mê thuật - Gia Lai - Kontum</option>
+                            </optgroup>
+                            <optgroup label="Miền Nam">
+                                    <option value="">TP.HCM - Cần Thơ - Cà Mau</option>
+                                    <option value="">TP.HCM - Mỹ Tho</option>
+                            </optgroup>
+                        </select>
+                    </td>
+            </tr>
+            <tr>
+                <td>Phương tiện</td>
+                <td>
+                    <input type="radio" name="" id="">Máy bay
+                    <input type="radio" name="" id="">Xe ô tô
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <fieldset>
+                        <legend>Số lượng đoàn khách</legend>
+                        Người lớn <input type="text" name="" id="">
+                        Trẻ em <input type="text" name="" id="">
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td>Ghi chú thêm</td>
+                <td>
+                    <textarea name="" id="" cols="40" rows="5"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button onclick="inthongbao()">Đồng ý</button>
+                </td>
+            </tr>
+            <tr id="trkq" style="display:none;">
+                <td colspan="2" id="kq"></td>
+            </tr>
+        </table>
+        <script>
+                function inthongbao(){
+                   
+                    var trkq = document.getElementById("trkq");
+                    trkq.style.display = "block";
+                    document.getElementById("kq").innerHTML = "Bạn đã đăng ký thành công!";
+    
+                }
+            </script>
+    </body>
+</html>

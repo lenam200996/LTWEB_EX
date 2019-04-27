@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Cau 5 Buoi 2</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+                <h1>Đăng nhập</h1>
+                <table>
+                    <tr  style="text-align: left;">
+                        <td>Mã người dùng</td>
+                        <td>
+                            <input type="text" id="un">
+                        </td>
+                    </tr>
+                    <tr style="text-align: left;">
+                        <td>Mật khẩu</td>
+                        <td>
+                            <input type="password" id="pw">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="button" value="Đồng ý" onclick="submitdn()">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" id="kq" style="display: none;text-align: center;"></td>
+                    </tr>
+                </table>
+        </div>
+        
+        <script>
+            function submitdn(){
+                var tr = document.getElementById("kq");
+                tr.style.display = "block";
+                document.getElementById("kq").innerHTML = document.getElementById("un").value;
+            }
+        </script>
+    </body>
+</html>

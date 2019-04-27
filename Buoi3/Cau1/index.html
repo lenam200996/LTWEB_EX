@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Cau 1 Buoi 3</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Phiếu đăng ký tham gia chương trình khuyến mãi</h1>
+        <table>
+            <tr>
+                <td>Ho va ten</td>
+                <td>
+                    <input type="text" >
+                </td>
+            </tr>
+            <tr>
+                <td>Dia chi</td>
+                <td>
+                    <input type="text" >
+                </td>
+            </tr>
+            <tr>
+                <td>Dien thoai</td>
+                <td>
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <td>Phai</td>
+                <td>
+                    <input type="radio"> Nam <input type="radio"> Nu
+                </td>
+            </tr>
+            <tr>
+                <td>Nghe nghiep</td>
+                <td>
+                    <select>
+                        <option value="">Bác sĩ</option>
+                        <option value="">Kỹ sư</option>
+                        <option value="">Giáo viên</option>
+                        <option value="">Khác</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Chọn sản phẩm tham gia</td>
+                <td>
+                    <select name="" id="" multiple>
+                        <option value="">Kem đánh răng</option>
+                        <option value="">Bột giặt</option>
+                        <option value="">Dầu gội đầu</option>
+                        <option value="">Sữa tắm</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Số người dự đoán tham gia</td>
+                <td>
+                    <input type="text" name="" id="">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align:center">
+                    <input type="button" onclick="inthongbao()" name="" id="" value="Đồng ý">
+                </td>
+            </tr>
+            <tr style="display: none;" id="trkq">
+                <td colspan="2" id="kq" style="text-align:center"></td>
+            </tr>
+        </table>
+
+        <script>
+            function inthongbao(){
+               
+                var trkq = document.getElementById("trkq");
+                trkq.style.display = "block";
+                document.getElementById("kq").innerHTML = "Bạn đã đăng ký thành công!";
+
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+
+body{
+    font-family: 'Tahoma';
+    font-size: 12px;
+}
+table{
+    border: .5px solid #000;
+    width: 100%;
+    border-collapse: collapse; 
+}
+
+table tr th,td{
+    border: .5px solid #000;
+    margin: 0;
+}
+
+
+table tr th{
+    background-color: #cc0033;
+    color:#ffffff;
+}
+.ct{
+    text-align: center;
+}
+.title{
+    text-align: center;
+    color: #cc0033;
+}

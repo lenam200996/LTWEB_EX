@@ -1,0 +1,18 @@
+.left{
+    float: left;
+    width: 30%;
+}
+.right{
+    float: left;
+    height: 70%;
+    padding-left: 10px;
+}
+.title{
+    text-align: center;
+    color: rgb(212, 52, 79);
+}
+
+.subtitle{
+    background-color: rgb(212, 52, 79);
+    color: white;
+}

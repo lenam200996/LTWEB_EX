@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>DHTML</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- <img src="anh1.jpg" alt="" style="width:300px;height: 500px;" onmouseover="onmover(this)" onmouseout="onout(this)" onclick="onclickk(this)">
+        <script>
+            function onmover(img) {
+                img.src = "anh2.jpg"
+            }
+
+            function onout(img) {
+                img.src = "anh3.jpg"
+            }
+
+            function onclickk(img) {
+                img.src = "anh4.jpg"
+            }
+        </script> -->
+
+        <!-- <input type="text" id="ten">
+        <input type="text" id="tuoi">
+        <input type="button" value="Hien Thi" onclick="hienthi()">
+
+        <script>
+            function hienthi(){
+                var ten = document.getElementById("ten").value;
+                var tuoi = document.getElementById("tuoi").value;
+                document.write("Ten: <b>"+ten+"</b>; tuoi:<u>"+tuoi+"</u>");
+            } -->
+
+
+            <input type="text" id="ten">
+        <input type="text" id="tuoi">
+        <input type="text" id="nam">
+
+        <input type="button" value="Hien Thi" onclick="hienthi()">
+
+        <script>
+            function hienthi(){
+                var ngay = document.getElementById("ten").value;
+                var thang = document.getElementById("tuoi").value;
+                var nam= document.getElementById("nam").value;
+                var ngaysinh= new Date(nam, thang, ngay);
+                tuoi= ngaysinh.getYear()- nam;
+
+                document.write("Tuoi la: "+ tuoi);
+            }
+
+            
+        
+
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,34 @@
+
+body{
+    background-color: #FFEDCA;
+}
+.left{
+    float: left;
+    width: 30%;
+}
+.right{
+    float: left;
+    height: 70%;
+    padding-left: 10px;
+}
+.title{
+    color: #cc6600;
+    text-align: center;
+
+}
+table{
+    width: 100%;
+    border:.5px solid #000;
+}
+table tr th{
+    background-color: #cc6600;
+    color: white;
+}
+
+.le{
+    background-color: white;
+}
+
+.chan{
+    background-color: #FFEDCA;
+}
